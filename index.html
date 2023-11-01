@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Inventory Application</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./scripts/main.js"></script>
+</head>
+<body>
+    <header> 
+        <h1>NFT Marketplace</h1>
+    </header>
+    <main>
+        <section class="nft-selector">
+            <h2>Select Your NFT</h3>
+            <form id="new-nft">
+                <label for="name">NFT Name
+                    <input id="name" name="name" type="text" placeholder="Don't think too long" required>
+                </label>
+                <label for="id">NFT ID
+                    <input id="id" name="id" type="text" placeholder="***-***-***-***" required>
+                </label>
+                <label for="crypto">Choose Crypto Currency
+                    <!-- when using selector values you need to dot into them --> 
+                    <select id="crypto-currencies"  name="category"> 
+                        <option value="Bitcoin">Bitcoin</option>
+                        <option value="Ethereum">Ethereum</option>
+                        <option value="Tether">Tether</option>
+                        <option value="Binance Coin">Binance Coin</option>
+                        <option value="XRP">XRP</option>
+                        <option value="Cardano">Cardano</option>
+                        <option value="Dogecoin">Dogecoin</option>
+                        <option value="Monero">Monero</option> 
+                    </select>  
+                </label>
+                <label for="price">Price
+                    <input id="price" name="price" type="number" required>
+                </label>
+                <label for="in-stock">Is NFT In Stock?
+                    <select id="in-stock" name="category">
+                        <option value="In Stock">In Stock</option>
+                        <option value="Out of Stock">Out of Stock</option>
+                    </select>
+                </label> 
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+            
+            
+        </section>
+
+        <section class="nft-collection">
+
+        </section>
+    </main>
+</body>
+</html>
