@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Inventory Application</title>
 <link rel="stylesheet" href="./style.css">
-<script defer src="./scripts/main.js"></script>
+<script defer type="module/javascript" src="./scripts/main.js"></script>
 </head>
 <body>
     <header> 
@@ -21,9 +21,9 @@
                 <label for="id">NFT ID
                     <input id="id" name="id" type="text" placeholder="***-***-***-***" required>
                 </label>
-                <label for="crypto">Choose Crypto Currency
+                <label for="cryptoCurrencies">Choose Crypto Currency
                     <!-- when using selector values you need to dot into them --> 
-                    <select id="crypto-currencies"  name="category"> 
+                    <select id="cryptoCurrencies"  name="category"> 
                         <option value="Bitcoin">Bitcoin</option>
                         <option value="Ethereum">Ethereum</option>
                         <option value="Tether">Tether</option>
@@ -37,8 +37,8 @@
                 <label for="price">Price
                     <input id="price" name="price" type="number" required>
                 </label>
-                <label for="in-stock">Is NFT In Stock?
-                    <select id="in-stock" name="category">
+                <label for="inStock">Is NFT In Stock?
+                    <select id="inStock" name="category">
                         <option value="In Stock">In Stock</option>
                         <option value="Out of Stock">Out of Stock</option>
                     </select>
