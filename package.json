@@ -1,0 +1,15 @@
+{
+    "name": "web-inventory-application-project",
+    "version": "1.0.0",
+    "main": "main.js", 
+    "scripts": {
+        "test": ""
+    },
+    "keywords": [
+        "web",
+        "app",
+        "application"
+    ],
+    "author": "Alexander Gonzalez",
+    "license": "MIT"
+}
