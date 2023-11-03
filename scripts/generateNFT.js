@@ -10,18 +10,16 @@
 //     colorBias: 15, // Slightly changes the color hue, which adds more color to the image (default: undefined)
 //     grayscaleBias: false // Change only the brightness of the color instead of the hue (default: undefined)
 //   });
-  
 // const art = generate() // Generating the pixel art
-  
 // const pngBuffer = art.toBuffer('image/png');
 // const dataURL = art.toDataURL(); 
 
 function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
-    const li = docuent.createElement("li");
+    const li = document.createElement("li");
     li.classList.add("nftList");  
     //create a button 
     const removeButton = document.createElement("button");
-    removeButton.className = "remove"
+    removeButton.classList.add = "remove"
     //add text to button 
     removeButton.textContent = "Remove NFT";
     //add an event listner to the button tp remove the li
@@ -31,10 +29,10 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
     });
 
     if (name && id && cryptoCurrencies && price && inStock === "In Stock") {
-        li.innterHTML = `<h3>👾</h3><p><strong>NFT Name</strong>: ${name}</p>;
-        <p><strong>NFT ID</strong>: ${id}</p>;
-        <p><strong>Crypto</strong>: ${cryptoCurrencies}</p>;
-        <p><strong>Price</strong>: ${price}</p>;
+        li.innerHTML = `<h3>👾</h3><p><strong>NFT Name</strong>: ${name}</p>
+        <p><strong>NFT ID</strong>: ${id}</p>
+        <p><strong>Crypto</strong>: ${cryptoCurrencies}</p>
+        <p><strong>Price</strong>: ${price}</p>
         <p><strong>Stock</strong>: ${inStock}</p>`;
 
         // need to add logic for in stock/ out of stock putton to append here
@@ -48,6 +46,7 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
 
 function generateNFT(name, id, cryptoCurrencies, price, inStock) {
     const li = nftTemplate(name, id, cryptoCurrencies, price, inStock);
+    console.log("The test!!!!!",li) 
     const ul = document.querySelector("ul"); 
     ul.append(li); 
 }
