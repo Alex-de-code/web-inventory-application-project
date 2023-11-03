@@ -1,9 +1,8 @@
 
 /* using this to make borders of each element more clear for manipulating later and properly formatting/designing web page */
-/* * {
+* {
     border: 1px solid red;
-    color: blue;
-} */
+}
 
 form input, label, textarea{
   box-sizing: border-box;
@@ -11,7 +10,6 @@ form input, label, textarea{
   margin: 5px 0;
   width: 100%;
 }
-
 
 form button[type="submit"],
 button {
@@ -77,3 +75,21 @@ button {
   margin: 10px 0;
   padding: 10px;
 } 
+
+/* grid box set up for nft collection sections */
+.nft-collection ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* border box arond nft collection list items */
+.nft-collection ul li {
+  border: 10px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}

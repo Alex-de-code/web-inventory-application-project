@@ -21,6 +21,7 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
     li.classList.add("nftList");  
     //create a button 
     const removeButton = document.createElement("button");
+    removeButton.className = "remove"
     //add text to button 
     removeButton.textContent = "Remove NFT";
     //add an event listner to the button tp remove the li
@@ -30,7 +31,7 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
     });
 
     if (name && id && cryptoCurrencies && price && inStock === "In Stock") {
-        li.innterHTML = `<p><strong>NFT Name</strong>: ${name}</p>;
+        li.innterHTML = `<h3>👾</h3><p><strong>NFT Name</strong>: ${name}</p>;
         <p><strong>NFT ID</strong>: ${id}</p>;
         <p><strong>Crypto</strong>: ${cryptoCurrencies}</p>;
         <p><strong>Price</strong>: ${price}</p>;
@@ -46,9 +47,18 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
 }
 
 function generateNFT(name, id, cryptoCurrencies, price, inStock) {
-    const li = nftTemplate(name, id, cryptoCurrencies, price, inStock)
+    const li = nftTemplate(name, id, cryptoCurrencies, price, inStock);
     const ul = document.querySelector("ul"); 
     ul.append(li); 
+}
+
+// this gives the Remove NFT button functionality and allows user to effectively remove any NFT from NFT Collection by clicking "Remove NFT"
+const listItems = document.querySelectorAll(".remove");
+// loop through elements
+for(item of listItems) {
+    item.addEventListener('click', (event) => {
+        event.target.closest(".nftList").remove(); 
+    });
 }
 
 // test if script is properly connected 
