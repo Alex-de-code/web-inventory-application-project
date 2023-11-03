@@ -16,4 +16,40 @@
 // const pngBuffer = art.toBuffer('image/png');
 // const dataURL = art.toDataURL(); 
 
-console.log("test...from NFT generator");
+function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
+    const li = docuent.createElement("li");
+    li.classList.add("nftList");  
+    //create a button 
+    const removeButton = document.createElement("button");
+    //add text to button 
+    removeButton.textContent = "Remove NFT";
+    //add an event listner to the button tp remove the li
+    removeButton.addEventListener("click", (event) => {
+    //find closest li to this button and remove it 
+    event.target.closest(".nftList").remove();
+    });
+
+    if (name && id && cryptoCurrencies && price && inStock === "In Stock") {
+        li.innterHTML = `<p><strong>NFT Name</strong>: ${name}</p>;
+        <p><strong>NFT ID</strong>: ${id}</p>;
+        <p><strong>Crypto</strong>: ${cryptoCurrencies}</p>;
+        <p><strong>Price</strong>: ${price}</p>;
+        <p><strong>Stock</strong>: ${inStock}</p>`;
+
+        // need to add logic for in stock/ out of stock putton to append here
+
+        // append revove button to the li 
+        li.append(removeButton);
+    }
+
+    return li; 
+}
+
+function generateNFT(name, id, cryptoCurrencies, price, inStock) {
+    const li = nftTemplate(name, id, cryptoCurrencies, price, inStock)
+    const ul = document.querySelector("ul"); 
+    ul.append(li); 
+}
+
+// test if script is properly connected 
+// console.log("test...from NFT generator"); 

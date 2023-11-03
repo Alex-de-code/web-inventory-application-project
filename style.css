@@ -1,8 +1,79 @@
 
 /* using this to make borders of each element more clear for manipulating later and properly formatting/designing web page */
-* {
+/* * {
     border: 1px solid red;
     color: blue;
+} */
+
+form input, label, textarea{
+  box-sizing: border-box;
+  display: block;
+  margin: 5px 0;
+  width: 100%;
 }
 
 
+form button[type="submit"],
+button {
+  background: #73956f;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button[type="submit"]:hover,
+button:hover {
+  background: #46494c;
+}
+
+form button[type="reset"],
+button {
+  background: #FF6666;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button[type="reset"]:hover,
+button:hover {
+  background: #46494c;
+}
+
+form button[type="In Stock"],
+button {
+  background: #73956f;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px; 
+}
+
+form button[type="Remove NFT"],
+button {
+  background: #FF6666;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+form button[type="In Stock"],
+button {
+  background: #73956f;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+} 

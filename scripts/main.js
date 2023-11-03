@@ -6,7 +6,12 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     // get target data
     const { name, id, cryptoCurrencies, price, inStock } = event.target.elements;
+    // call the generate NFT f(x)
+    generateNFT(name.value, id.value, cryptoCurrencies.value, price.value, inStock.value);
+    //clear inputs from form 
+    form.reset(); 
+}); 
 
-})
 
-console.log("test..from main");
+// test script connection
+// console.log("test..from main");
