@@ -86,17 +86,6 @@ button {
   padding: 10px;
 }
 
-form button[type="In Stock"],
-button {
-  background: #73956f;
-  border: none;
-  border-radius: 5px;
-  color: #f7f7f7;
-  cursor: pointer;
-  margin: 10px 0;
-  padding: 10px;
-} 
-
 .nft-selector {
   /* display: grid;
   grid-template-rows: repeat(2 , 1fr); */
@@ -105,7 +94,7 @@ button {
   background: linear-gradient(6deg, rgba(70,16,138,1) 27%, rgba(35,72,133,1) 93%);
   color: white;
   border-radius: 5px;
-  padding: 0 0 0 2rem;
+  padding-left: 2rem;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -149,6 +138,7 @@ button {
   gap: 1rem;
   list-style: none;
   padding-left: 0;
+  padding-right: 15px; 
   margin-right: 20px;
 }
 

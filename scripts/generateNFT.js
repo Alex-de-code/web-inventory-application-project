@@ -1,19 +1,3 @@
-// import { randpix, RandpixColorScheme, Symmetry } from 'randpix';
-
-// const generate = randpix({
-//     colorScheme: RandpixColorScheme.DARKULA, // Color theme (default: NEUTRAL)
-//     size: 8, // Art size. Recommended 7 or 8 (odd/even symmetry) (default: 8)
-//     scale: 32, // Pixel scale (default: 1)
-//     symmetry: Symmetry.VERTICAL, // Symmetry (default: VERTICAL)
-//     color: [255, 100, 50], // [R, G, B] like color for solid art (default: undefined),
-//     seed: 'Some string', // Seed (default: undefined)
-//     colorBias: 15, // Slightly changes the color hue, which adds more color to the image (default: undefined)
-//     grayscaleBias: false // Change only the brightness of the color instead of the hue (default: undefined)
-//   });
-// const art = generate() // Generating the pixel art
-// const pngBuffer = art.toBuffer('image/png');
-// const dataURL = art.toDataURL(); 
-
 function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
     const li = document.createElement("li");
     li.classList.add("nftList");  
@@ -36,7 +20,7 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
         <p><strong>Stock</strong>: ${inStock}</p>`;
 
         // need to add logic for in stock/ out of stock putton to append here
-
+        li.append(stockChange); 
         // append revove button to the li 
         li.append(removeButton);
     }

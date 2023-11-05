@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="./style.css">
 <script defer src="./scripts/main.js"></script>
 <script defer src="./scripts/generateNFT.js"></script>
+<script defer src="./scripts/stockChanger.js"></script>
 </head>
 <body>
     <header> 
@@ -15,7 +16,7 @@
     <main>
         <section class="main-page">
         <section class="nft-selector">
-            <h2>Select Your NFT</h3>
+            <h2>Purchase Your NFT</h3>
             <form id="new-nft">
                 <label for="name">NFT Name
                     <input id="name" name="name" type="text" class="inputs" placeholder="Don't think too long" required>
@@ -62,7 +63,7 @@
                     <p><strong>NFT ID</strong>: 193_301_437_234</p>
                     <p><strong>Crypto</strong>: Monero</p>
                     <p><strong>Price</strong>: 3.67</p>
-                    <button>In Stock</button>
+                    <button class="stock-changer">In Stock</button>
                     <button class="remove">Remove NFT</button>
                 </li>
                 <li class="nftList">
@@ -71,7 +72,7 @@
                     <p><strong>NFT ID</strong>: 222_982_232_175</p>
                     <p><strong>Crypto</strong>: Tether</p>
                     <p><strong>Price</strong>: 9.22</p>
-                    <button>Out of Stock</button>
+                    <button class="stock-changer">Out of Stock</button>
                     <button class="remove">Remove NFT</button>
                 </li>
                 <li class="nftList">
@@ -80,7 +81,7 @@
                     <p><strong>NFT ID</strong>: 452_677_917_448</p>
                     <p><strong>Crypto</strong>: Bitcoin</p>
                     <p><strong>Price</strong>: 1.00</p>
-                    <button>In Stock</button>
+                    <button class="stock-changer">In Stock</button>
                     <button class="remove">Remove NFT</button>
                 </li>
             </ul>
