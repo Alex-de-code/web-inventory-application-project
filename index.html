@@ -10,20 +10,22 @@
 </head>
 <body>
     <header> 
-        <h1>NFT Marketplace</h1>
+        <h1>NFT Marketplace</h1> 
     </header>
     <main>
+        <section class="main-page">
         <section class="nft-selector">
             <h2>Select Your NFT</h3>
             <form id="new-nft">
                 <label for="name">NFT Name
-                    <input id="name" name="name" type="text" placeholder="Don't think too long" required>
+                    <input id="name" name="name" type="text" class="inputs" placeholder="Don't think too long" required>
                 </label>
                 <label for="id">NFT ID
-                    <input id="id" name="id" type="text" placeholder="***-***-***-***" required>
+                    <input id="id" name="id" type="text" class="inputs" placeholder="***-***-***-***" required>
                 </label>
                 <label for="cryptoCurrencies">Choose Crypto Currency
                     <!-- when using selector values you need to dot into them --> 
+                    <br>
                     <select id="cryptoCurrencies"  name="cryptoCurrencies"> 
                         <option value="Bitcoin">Bitcoin</option>
                         <option value="Ethereum">Ethereum</option>
@@ -36,9 +38,10 @@
                     </select>  
                 </label>
                 <label for="price">Price
-                    <input id="price" name="price" type="number" required>
+                    <input id="price" name="price" type="number" class="inputs" required>
                 </label>
                 <label for="inStock">Is NFT In Stock?
+                    <br>
                     <select id="inStock" name="inStock">
                         <option value="In Stock">In Stock</option>
                         <option value="Out of Stock">Out of Stock</option>
@@ -47,6 +50,8 @@
                 <button type="reset">Reset</button>
                 <button type="submit">Submit</button>
             </form>
+        </section>
+        <img class="image1" src="https://i.pinimg.com/564x/db/3e/6c/db3e6c1420946a27659f9b4399c5ce8d.jpg" alt="blockchain city">
         </section>
         <section class="nft-collection">
             <h2>NFT Collection</h2>
