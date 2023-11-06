@@ -8,11 +8,26 @@ Welcome to the NFT Marketplace Web Inventory Application project! This applicati
 
 To get started with this project, follow these steps:
 
-1. Create a new GitHub repository.
-2. Clone the repository to your local machine.
-3. Implement the project requirements as described in the HTML, CSS, and JavaScript files.
-4. Deploy your application using GitHub Pages.
-5. Explore additional features and improvements to enhance your project.
+# GitHub Repository Setup
+# 1. Create a new GitHub repository using the GitHub web interface.
+#    You can create a new repository with your desired name and settings.
+
+# Local Machine Setup
+# 2. Clone the repository to your local machine using the following command.
+#    Replace <repository_url> with the URL of your GitHub repository.
+git clone <repository_url>
+
+# Project Implementation
+# 3. Open the project files in your preferred text editor to implement the project requirements
+#    as described in the HTML, CSS, and JavaScript files.
+
+# GitHub Pages Deployment
+# 4. Deploy the application using GitHub Pages by following these steps:
+#    1. Go to your GitHub repository.
+#    2. Click on the "Settings" tab.
+#    3. Scroll down to the "GitHub Pages" section.
+#    4. Choose the branch you want to deploy (usually "main" or "master").
+#    5. Save the settings, and the application will be accessible via the provided GitHub Pages URL.
 
 ## Project Structure
 
