@@ -17,22 +17,28 @@ function nftTemplate(name, id, cryptoCurrencies, price, inStock) {
         <p><strong>NFT ID</strong>: ${id}</p>
         <p><strong>Crypto</strong>: ${cryptoCurrencies}</p>
         <p><strong>Price</strong>: ${price}</p>
-        <p><strong>Stock</strong>: ${inStock}</p>`;
-
-        // need to add logic for in stock/ out of stock putton to append here
-        li.append(stockChange); 
+        <button class="new-stock-changer">In Stock</button>` 
         // append revove button to the li 
         li.append(removeButton);
     }
+
+    //call stock toggle
+    // AddStockToggle(); 
 
     return li; 
 }
 
 function generateNFT(name, id, cryptoCurrencies, price, inStock) {
-    const li = nftTemplate(name, id, cryptoCurrencies, price, inStock);
-    console.log("The test!!!!!",li) 
+    const li = nftTemplate(name, id, cryptoCurrencies, price, inStock); 
     const ul = document.querySelector("ul"); 
     ul.append(li); 
+    // select new stock changer 
+    const newItemStock = document.querySelector(".new-stock-changer"); 
+    //call f(x) to add stock changer
+    AddStockToggle(newItemStock); 
+    //get rid of new-stock-changer class since the AddStockToggle() is a single use f(x) as soon as it finds what it's looking for so we need to change the class name 
+    newItemStock.classList.remove("new-stock-changer")
+    newItemStock.classList.add("stock-changer") 
 }
 
 // this gives the Remove NFT button functionality and allows user to effectively remove any NFT from NFT Collection by clicking "Remove NFT"
