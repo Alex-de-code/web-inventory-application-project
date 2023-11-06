@@ -1,6 +1,6 @@
-# Web Inventory Application
+# NFT Web Inventory Application
 
-Welcome to the Web Inventory Application project! This application allows you to manage and display Non-Fungible Tokens (NFTs) in a marketplace. In this repository, you'll find a web application built using HTML, CSS, and JavaScript. It features interactive functionality, including the ability to add, remove, and modify NFT listings.
+Welcome to the NFT Marketplace Web Inventory Application project! This application allows you to manage and display Non-Fungible Tokens (NFTs) in a marketplace. In this repository, you'll find a web application built using HTML, CSS, and JavaScript. It features interactive functionality, including the ability to add, remove, and modify NFT listings.
 
 `Link`: https://alex-de-code.github.io/web-inventory-application-project/
 
