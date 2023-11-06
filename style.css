@@ -156,7 +156,7 @@ button {
 }
 
 /* add media query that changes grid-columns to 2 or 1 at certain width */
-@media(max-width: 600px) {
+@media(max-width: 620px) {
   .nft-collection ul {
     grid-template-columns: repeat(2, 1fr);
   }
